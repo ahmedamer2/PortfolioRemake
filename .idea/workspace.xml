@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42f5d548-8f0c-429a-97d9-09dfa16f3e35" name="Changes" comment="" />
+    <list default="true" id="42f5d548-8f0c-429a-97d9-09dfa16f3e35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +120,7 @@
       <workItem from="1774130773561" duration="227000" />
       <workItem from="1774131010230" duration="240000" />
       <workItem from="1774212518225" duration="2256000" />
-      <workItem from="1774313760752" duration="3157000" />
+      <workItem from="1774313760752" duration="3235000" />
     </task>
     <servers />
   </component>
