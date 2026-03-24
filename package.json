@@ -33,5 +33,11 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.13.0",
+  "lint-staged": {
+    "*": [
+      "yarn run build",
+      "yarn run biome"
+    ]
+  }
 }
