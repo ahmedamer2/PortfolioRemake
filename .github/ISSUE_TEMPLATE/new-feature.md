@@ -1,9 +1,9 @@
 ---
 name: New Feature
 about: New Feature Template
-title: "[Feature] "
+title: "[Feature] <title>"
 labels: ''
-assignees: ahmedamer2
+assignees:
 
 ---
 
