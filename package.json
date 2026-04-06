@@ -10,7 +10,8 @@
     "format": "biome format --write",
     "postinstall": "husky",
     "biome": "biome check --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "huskyPreCommit": "yarn run biome"
   },
   "dependencies": {
     "@sanity/image-url": "1",
