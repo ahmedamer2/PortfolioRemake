@@ -12,7 +12,8 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "indentWidth": 2
+    "indentWidth": 2,
+    "lineWidth": 120
   },
   "linter": {
     "enabled": true,
@@ -32,6 +33,24 @@
       "source": {
         "organizeImports": "on"
       }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "arrowParentheses": "asNeeded",
+      "semicolons": "always",
+      "trailingCommas": "es5",
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineWidth": 120,
+      "lineEnding": "crlf",
+      "attributePosition": "multiline",
+      "operatorLinebreak": "before"
+    },
+    "linter": {
+      "enabled": true
     }
   }
 }
