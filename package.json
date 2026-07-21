@@ -14,17 +14,19 @@
     "huskyPreCommit": "yarn run biome"
   },
   "dependencies": {
-    "@sanity/image-url": "1",
-    "@sanity/vision": "4",
+    "@clerk/nextjs": "^7.5.20",
+    "@sanity/image-url": "2",
+    "@sanity/vision": "5",
     "next": "16.2.1",
-    "next-sanity": "^12.1.5",
+    "next-sanity": "^13.1.4",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sanity": "4",
+    "sanity": "5",
     "styled-components": "6"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
+    "@sanity/cli": "^7.11.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
