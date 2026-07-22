@@ -1,5 +1,5 @@
 import type { SchemaTypeDefinition } from "sanity";
-import profile from "@/sanity/schemaTypes/profile";
+import profile from "./profile";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [profile],
