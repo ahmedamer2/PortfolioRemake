@@ -11,7 +11,7 @@
     "postinstall": "husky",
     "biome": "biome check --write",
     "prepare": "husky",
-    "huskyPreCommit": "yarn run format && yarn run biome"
+    "huskyPreCommit": "yarn run biome"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -47,7 +47,7 @@
   "packageManager": "yarn@4.13.0",
   "lint-staged": {
     "*": [
-      "yarn run build",
+      "yarn run format",
       "yarn run biome"
     ]
   }
