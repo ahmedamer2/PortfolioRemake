@@ -11,7 +11,8 @@
     "postinstall": "husky",
     "biome": "biome check --write",
     "prepare": "husky",
-    "huskyPreCommit": "yarn run biome"
+    "huskyPreCommit": "yarn run biome",
+    "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -21,6 +22,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.25.0",
+    "motion": "^12.42.2",
     "next": "16.2.1",
     "next-sanity": "^13.1.4",
     "react": "19.2.4",

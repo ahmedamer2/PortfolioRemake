@@ -10986,6 +10986,7 @@ __metadata:
     husky: "npm:^9.1.7"
     lint-staged: "npm:^16.4.0"
     lucide-react: "npm:^1.25.0"
+    motion: "npm:^12.42.2"
     next: "npm:16.2.1"
     next-sanity: "npm:^13.1.4"
     react: "npm:19.2.4"
