@@ -10,8 +10,8 @@
     "format": "biome format --write",
     "postinstall": "husky",
     "biome": "biome check --write",
+    "biomeUnsafe": "biome check --write --unsafe",
     "prepare": "husky",
-    "huskyPreCommit": "yarn run biome",
     "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {

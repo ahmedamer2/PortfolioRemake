@@ -1,1 +1,1 @@
-yarn run huskyPreCommit
+yarn dlx lint-staged
