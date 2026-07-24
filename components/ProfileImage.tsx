@@ -10,7 +10,7 @@ interface ProfileImageProps {
 }
 
 function ProfileImage({ imageUrl, firstName, lastName }: ProfileImageProps) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [_isHovered, setIsHovered] = useState(false);
   return (
     <button
       type="button"
