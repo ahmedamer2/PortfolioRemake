@@ -216,6 +216,82 @@ export type AllSanitySchemaTypes =
   | Geopoint
   | Slug;
 
+// Source: components/chat/ChatWrapper.tsx
+// Variable: CHAT_PROFILE_QUERY
+// Query: *[_id == "singleton-profile"][0]{    _id,    _type,    _createdAt,    _updatedAt,    _rev,    firstName,    lastName,    title,    shortDescription,    email,    phone,    location,    availability,    socialLinks,    yearsOfExperience,    profileImage,}
+export type CHAT_PROFILE_QUERY_RESULT =
+  | {
+      _id: "singleton-profile";
+      _type: "profile";
+      _createdAt: string;
+      _updatedAt: string;
+      _rev: string;
+      firstName: string | null;
+      lastName: string | null;
+      title: string | null;
+      shortDescription: string | null;
+      email: string | null;
+      phone: null;
+      location: string | null;
+      availability: "available" | "open" | "unavailable" | null;
+      socialLinks: {
+        github?: string;
+        linkedin?: string;
+        twitter?: string;
+        website?: string;
+        medium?: string;
+        devto?: string;
+        youtube?: string;
+        stackoverflow?: string;
+      } | null;
+      yearsOfExperience: number | null;
+      profileImage: {
+        asset?: SanityImageAssetReference;
+        media?: unknown;
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        alt?: string;
+        _type: "image";
+      } | null;
+    }
+  | {
+      _id: "singleton-profile";
+      _type: "sanity.fileAsset";
+      _createdAt: string;
+      _updatedAt: string;
+      _rev: string;
+      firstName: null;
+      lastName: null;
+      title: string | null;
+      shortDescription: null;
+      email: null;
+      phone: null;
+      location: null;
+      availability: null;
+      socialLinks: null;
+      yearsOfExperience: null;
+      profileImage: null;
+    }
+  | {
+      _id: "singleton-profile";
+      _type: "sanity.imageAsset";
+      _createdAt: string;
+      _updatedAt: string;
+      _rev: string;
+      firstName: null;
+      lastName: null;
+      title: string | null;
+      shortDescription: null;
+      email: null;
+      phone: null;
+      location: null;
+      availability: null;
+      socialLinks: null;
+      yearsOfExperience: null;
+      profileImage: null;
+    }
+  | null;
+
 // Source: components/sections/HeroSection.tsx
 // Variable: HERO_QUERY
 // Query: *[_id=="singleton-profile"][0]{  firstName,  lastName,  title,  headlineStaticText,  headlineAnimatedText,  headlineAnimationDuration,  shortDescription,  email,  phone,  location,  availability,  socialLinks,  yearsOfExperience,  profileImage}
@@ -274,6 +350,7 @@ export type HERO_QUERY_RESULT =
 import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
+    '*[_id == "singleton-profile"][0]{\n    _id,\n    _type,\n    _createdAt,\n    _updatedAt,\n    _rev,\n    firstName,\n    lastName,\n    title,\n    shortDescription,\n    email,\n    phone,\n    location,\n    availability,\n    socialLinks,\n    yearsOfExperience,\n    profileImage,\n}': CHAT_PROFILE_QUERY_RESULT;
     '*[_id=="singleton-profile"][0]{\n  firstName,\n  lastName,\n  title,\n  headlineStaticText,\n  headlineAnimatedText,\n  headlineAnimationDuration,\n  shortDescription,\n  email,\n  phone,\n  location,\n  availability,\n  socialLinks,\n  yearsOfExperience,\n  profileImage\n}': HERO_QUERY_RESULT;
   }
 }

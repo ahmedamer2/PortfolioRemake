@@ -1,5 +1,6 @@
 "use client";
 
+import { useClerk, useUser } from "@clerk/nextjs";
 import { MessageCircle, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -14,13 +15,13 @@ interface ProfileImageProps {
 function ProfileImage({ imageUrl, firstName, lastName }: ProfileImageProps) {
   const [isHovered, setIsHovered] = useState(false);
   const { toggleSidebar, open } = useSidebar();
+  const { isSignedIn } = useUser();
+  const { openSignIn } = useClerk();
 
   return (
     <button
       type="button"
-      onClick={() => {
-        toggleSidebar();
-      }}
+      onClick={() => (isSignedIn ? toggleSidebar() : openSignIn())}
       className="relative aspect-square rounded-2xl overflow-hidden border-4 border-primary/20 block group cursor-pointer w-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
